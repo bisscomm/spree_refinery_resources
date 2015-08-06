@@ -1,0 +1,17 @@
+<div data-hook="admin_product_form_resources">
+  <%= f.field_container :resources, class: ['form-group'] do %>
+    <%= f.label :resource_ids, Spree.t(:resources) %>
+    <% if can? :modify, Refinery::Resource %>
+      <%= f.hidden_field :resource_ids, value: @product.resource_ids.join(',') %>
+    <% elsif @product.resources.any? %>
+      <ul class="text_list">
+        <% @product.resources.each do |r| %>
+          <li><%= r.title %></li>
+        <% end %>
+      </ul>
+    <% else %>
+      <div class="alert alert-info"><%= Spree.t(:no_resource_found, resource: :resources) %></div>
+    <% end %>
+
+  <% end %>
+</div>
