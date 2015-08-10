@@ -1,6 +1,8 @@
 Spree Refinery Resources
 ======================
 
+[![Build Status](https://travis-ci.org/bisscomm/spree_refinery_resources.svg?branch=master)](https://travis-ci.org/refinery/refinerycms) [![Code Climate](https://codeclimate.com/github/bisscomm/spree_refinery_resources/badges/gpa.svg)](https://codeclimate.com/github/bisscomm/spree_refinery_resources) [![Test Coverage](https://codeclimate.com/github/bisscomm/spree_refinery_resources/badges/coverage.svg)](https://codeclimate.com/github/bisscomm/spree_refinery_resources/coverage)
+
 This extension add the ability to attach `Refinery::Resource` files to a `Spree::Product`.
 
 Installation
