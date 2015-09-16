@@ -12,7 +12,7 @@ module Spree
         end
 
         def show
-          @resource = Refinery::Resource.accessible_by(current_ability, :read).find(params[:id])
+          @resource = Refinery::Resource.includes(:translations).accessible_by(current_ability, :read).find(params[:id])
           respond_with(@resource)
         end
 
