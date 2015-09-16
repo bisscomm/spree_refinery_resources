@@ -23,7 +23,7 @@ $(document).ready(function () {
         data: function (term) {
           return {
             q: {
-              title_cont: term,
+              resource_title_cont: term,
               file_name_cont: term
             },
             token: Spree.api_key
